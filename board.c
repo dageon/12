@@ -78,6 +78,7 @@ int board_stepShark(void)
 {
 	int step = rand()%MAX_SHARKSTEP + 1;
 	int i;
+	
 	for (i=0;i<=board_sharkPosition+step;i++)
 	{
 		if(i >= 0 && i < N_BOARD)

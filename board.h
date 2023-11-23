@@ -1,4 +1,3 @@
-
 #define N_BOARD			15
 
 #define BOARDSTATUS_OK		1

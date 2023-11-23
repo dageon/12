@@ -158,9 +158,9 @@ int main(int argc, char *argv[])
 		//	printPlayerPosition(i);
 		printPlayerStatus();
 		
-		//2-2. roll dice		
+		//2-2. roll dice
 		printf("%s turn!!", player_name[turn]);
-		printf("press any key to roll a dice.");
+		printf("press any key to roll a dice.\n");
 		scanf("%d", &c);
 		fflush(stdin);
 		step = rolldie();
