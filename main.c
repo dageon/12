@@ -197,9 +197,12 @@ int main(int argc, char *argv[])
 			checkDie();
 		}
 		
-		if(player_status[turn] == PLAYERSTATUS_DIE)
-				printf("%s in pos %i has died!! (coin %i)\n", player_name[turn], player_position[turn], player_coin[turn]); //상어에게 잡힌 player 결과 출력 
 		
+		int k = 0;
+		for(k=0;k<N_PLAYER;k++)
+			if(player_status[k] == PLAYERSTATUS_DIE)
+				printf("%s in pos %i has died!! (coin %i)\n", player_name[k], player_position[k], player_coin[k]); //상어에게 잡힌 player 결과 출력
+	
 	} while(!game_end());
 	
 	//3. 정리 (승자 계산, 출력 등) 
